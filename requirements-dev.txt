@@ -1,0 +1,10 @@
+# Development-only dependencies.
+# Install with:  .venv\Scripts\python.exe -m pip install -r requirements-dev.txt
+-r requirements.txt
+
+# Test runner. See README.md for the test command.
+pytest>=8.3,<9.0
+
+# Used only to generate sample_data/sample_invoice.pdf.
+# The committed PDF means the app and tests do not need this package at runtime.
+reportlab>=4.2,<5.0

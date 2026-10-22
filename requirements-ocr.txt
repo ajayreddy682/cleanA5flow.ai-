@@ -1,0 +1,11 @@
+# Optional OCR pathway for scanned PDFs.
+#
+# Installing these Python packages is not enough on Windows:
+#   1. Install Tesseract OCR (UB Mannheim build) and add its folder to PATH.
+#   2. Install Poppler for Windows and add its bin folder to PATH.
+#   3. Confirm `tesseract --version` works in a new terminal.
+#   4. Run: .venv\Scripts\python.exe -m pip install -r requirements-ocr.txt
+#
+# OCR output is line-based text, not reconstructed tables. Review it carefully.
+pytesseract>=0.3.13,<0.4
+pdf2image>=1.17,<2.0

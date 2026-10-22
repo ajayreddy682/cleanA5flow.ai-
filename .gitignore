@@ -1,0 +1,32 @@
+# Local environment
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# CleanFlow local metadata (never contains file contents, but not source)
+.cleanflow/
+
+# Generated/exported files
+exports/
+*.zip
+!sample_data/*.zip
+
+# Secrets
+.streamlit/secrets.toml
+.env
+
+# Development artifacts (browser screenshots and helper scripts)
+browser-tools/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
